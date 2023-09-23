@@ -182,7 +182,7 @@ while True:
     mcp_out_3.value = not mcp_in_3.value
 
     # UART TRANSMIT 
-    uart.write(bytes("Hello World!", "ascii"))
+    uart.write(bytes("Hello World!\r\n", "ascii"))
 
     # I2C ACCEL
     print("Acceleration: X:%.2f, Y: %.2f, Z: %.2f m/s^2" % (sensor.acceleration))
